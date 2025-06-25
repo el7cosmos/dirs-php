@@ -1,6 +1,6 @@
 .DEFAULT_GOAL = target
 
-target:
+target: src/lib.rs Cargo.lock
 	cargo build $(CARGO_MODE_FLAGS)
 	cp ./target/$(CARGO_MODE_DIR)/libdirs.$(SHLIB_SUFFIX_NAME) ./modules/dirs.$(SHLIB_DL_SUFFIX_NAME)
 
