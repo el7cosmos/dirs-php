@@ -1,0 +1,7 @@
+ARG_ENABLE('dirs', 'dirs support', 'no');
+
+if (PHP_DIRS != 'no') {
+	AC_DEFINE('HAVE_DIRS', 1, "Define to 1 if the PHP extension 'dirs' is available.");
+
+	EXTENSION('dirs', '');
+}
