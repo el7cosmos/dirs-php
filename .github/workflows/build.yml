@@ -28,6 +28,9 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       - uses: shivammathur/setup-php@v2
         if: ${{ matrix.os == 'macos-latest' }}
+      - run: cargo verify-project
+      - run: cargo fmt --check
+      - run: cargo clippy
       - run: phpize
       - run: ./configure
       - run: make
