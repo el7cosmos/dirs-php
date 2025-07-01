@@ -26,22 +26,22 @@ var_dump(template_dir());
 var_dump(video_dir());
 ?>
 --EXPECTF--
-string(%d) "/%s"
-string(%d) "/%s/.cache"
-string(%d) "/%s/.config"
-string(%d) "/%s/.config"
-string(%d) "/%s/.config"
-string(%d) "/%s/.local/share"
-string(%d) "/%s/.local/share"
-string(%d) "/%s/.local/bin"
-string(%d) "/%s/.config"
-NULL
-string(%d) "/%s/.local/state"
-NULL
-NULL
+string(%d) "/home/%s"
+string(%d) "/home/%s/.cache"
+string(%d) "/home/%s/.config"
+string(%d) "/home/%s/.config"
+string(%d) "/home/%s/.config"
+string(%d) "/home/%s/.local/share"
+string(%d) "/home/%s/.local/share"
+string(%d) "/home/%s/.local/bin"
+string(%d) "/home/%s/.config"
+string(%d) "/run/user/%d"
+string(%d) "/home/%s/.local/state"
 NULL
 NULL
-string(%d) "/%s/.local/share/fonts"
+NULL
+NULL
+string(%d) "/home/%s/.local/share/fonts"
 NULL
 NULL
 NULL

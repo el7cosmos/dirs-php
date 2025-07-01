@@ -21,7 +21,7 @@ if test "$PHP_DIRS" != "no"; then
 
   AC_DEFINE([HAVE_DIRS], [1], [ Define to 1 if the PHP extension 'dirs' is available. ])
 
-  PHP_NEW_EXTENSION(dirs, [ ])
+  PHP_NEW_EXTENSION(dirs)
   PHP_ADD_MAKEFILE_FRAGMENT()
 
   CARGO_MODE_FLAGS="--release"
@@ -32,6 +32,7 @@ if test "$PHP_DIRS" != "no"; then
     CARGO_MODE_DIR="debug"
   fi
 
+  PHP_SUBST([PHP_CONFIG])
   PHP_SUBST([CARGO_MODE_FLAGS])
   PHP_SUBST([CARGO_MODE_DIR])
 
