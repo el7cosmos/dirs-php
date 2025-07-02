@@ -2,7 +2,7 @@
   "name": "el7cosmos/dirs",
   "description": "PHP Wrapper for dirs-rs",
   "type": "php-ext",
-  "license": "GPL-2.0-or-later",
+  "license": "PHP-3.01",
   "authors": [
     {
       "name": "Abi أب",

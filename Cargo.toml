@@ -2,6 +2,7 @@
 name = "dirs"
 version = "0.1.0"
 edition = "2024"
+license = "PHP-3.01"
 
 [lib]
 crate-type = ["cdylib"]
